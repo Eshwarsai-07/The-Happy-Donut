@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Donuts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #FFF6F6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-pink-200 shadow-sm py-4 px-8 sticky top-0 z-50 ">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex  space-x-12">
+                <a href="#" class="text-gray-700 hover:text-pink-500 transition duration-300">Best Selling</a>
+                <a href="#" class="text-gray-700 hover:text-pink-500 transition duration-300">About Us</a>
+                <a href="#" class="text-gray-700 font-bold text-xl hover:text-pink-500 transition duration-300">Yummy Donuts</a>
+                <a href="#" class="text-gray-700 hover:text-pink-500 transition duration-300">Gallery</a>
+                <a href="#" class="text-gray-700 hover:text-pink-500 transition duration-300">Contact</a>
+            </div>
+            
+            <!-- Mobile menu button (hidden in this simplified version) -->
+            <div class="md:hidden">
+                <button class="outline-none">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-[70vh] flex items-center justify-center p-4 bg-amber-50 overflow-hidden">
+        <!-- Decorative Donuts -->
+        <!-- Top Left Donut -->
+        <div class="absolute top-0 left-0 -mt-12 -ml-12 w-64 h-64">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" fill="#FFC0CB" />
+                <circle cx="100" cy="100" r="30" fill="#8B4513" />
+                <!-- Sprinkles -->
+                <rect x="65" y="65" width="10" height="3" rx="1" fill="#FF1493" transform="rotate(45 65 65)" />
+                <rect x="125" y="85" width="10" height="3" rx="1" fill="#4169E1" transform="rotate(120 125 85)" />
+                <rect x="105" y="145" width="10" height="3" rx="1" fill="#32CD32" transform="rotate(200 105 145)" />
+                <rect x="75" y="125" width="10" height="3" rx="1" fill="#FFD700" transform="rotate(310 75 125)" />
+                <rect x="115" y="60" width="10" height="3" rx="1" fill="#800080" transform="rotate(20 115 60)" />
+                <rect x="145" y="115" width="10" height="3" rx="1" fill="#FF4500" transform="rotate(180 145 115)" />
+                <rect x="60" y="110" width="10" height="3" rx="1" fill="#1E90FF" transform="rotate(90 60 110)" />
+            </svg>
+        </div>
+        
+        <!-- Top Right Donut -->
+        <div class="absolute top-0 right-0 -mt-12 -mr-12 w-48 h-48">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" fill="#FFC0CB" />
+                <circle cx="100" cy="100" r="30" fill="#8B4513" />
+                <!-- Sprinkles -->
+                <rect x="70" y="70" width="10" height="3" rx="1" fill="#32CD32" transform="rotate(45 70 70)" />
+                <rect x="130" y="90" width="10" height="3" rx="1" fill="#FF1493" transform="rotate(120 130 90)" />
+                <rect x="110" y="135" width="10" height="3" rx="1" fill="#4169E1" transform="rotate(200 110 135)" />
+                <rect x="65" y="115" width="10" height="3" rx="1" fill="#800080" transform="rotate(310 65 115)" />
+                <rect x="125" y="65" width="10" height="3" rx="1" fill="#FFD700" transform="rotate(20 125 65)" />
+                <rect x="140" y="125" width="10" height="3" rx="1" fill="#1E90FF" transform="rotate(180 140 125)" />
+                <rect x="50" y="100" width="10" height="3" rx="1" fill="#FF4500" transform="rotate(90 50 100)" />
+            </svg>
+        </div>
+        
+        <!-- Bottom Left Donut -->
+        <div class="absolute bottom-0 left-1/4 -mb-16 w-52 h-52">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" fill="#FFC0CB" />
+                <circle cx="100" cy="100" r="30" fill="#8B4513" />
+                <!-- Sprinkles -->
+                <rect x="70" y="60" width="10" height="3" rx="1" fill="#FFD700" transform="rotate(15 70 60)" />
+                <rect x="120" y="70" width="10" height="3" rx="1" fill="#32CD32" transform="rotate(100 120 70)" />
+                <rect x="130" y="130" width="10" height="3" rx="1" fill="#FF1493" transform="rotate(230 130 130)" />
+                <rect x="80" y="125" width="10" height="3" rx="1" fill="#4169E1" transform="rotate(330 80 125)" />
+                <rect x="115" y="50" width="10" height="3" rx="1" fill="#800080" transform="rotate(30 115 50)" />
+                <rect x="150" y="105" width="10" height="3" rx="1" fill="#1E90FF" transform="rotate(170 150 105)" />
+                <rect x="60" y="105" width="10" height="3" rx="1" fill="#FF4500" transform="rotate(75 60 105)" />
+            </svg>
+        </div>
+        
+        <!-- Bottom Right Donut -->
+        <div class="absolute bottom-0 right-1/3 -mb-8 w-44 h-44">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" fill="#FFC0CB" />
+                <circle cx="100" cy="100" r="30" fill="#8B4513" />
+                <!-- Sprinkles -->
+                <rect x="75" y="75" width="10" height="3" rx="1" fill="#FF4500" transform="rotate(35 75 75)" />
+                <rect x="125" y="80" width="10" height="3" rx="1" fill="#1E90FF" transform="rotate(110 125 80)" />
+                <rect x="115" y="140" width="10" height="3" rx="1" fill="#800080" transform="rotate(210 115 140)" />
+                <rect x="70" y="115" width="10" height="3" rx="1" fill="#32CD32" transform="rotate(290 70 115)" />
+                <rect x="110" y="55" width="10" height="3" rx="1" fill="#4169E1" transform="rotate(10 110 55)" />
+                <rect x="145" y="110" width="10" height="3" rx="1" fill="#FFD700" transform="rotate(190 145 110)" />
+                <rect x="55" y="105" width="10" height="3" rx="1" fill="#FF1493" transform="rotate(85 55 105)" />
+            </svg>
+        </div>
+        
+        <!-- Central Content -->
+        <div class="relative z-10 text-center max-w-xl mx-auto">
+            <h2 class="text-gray-800 text-2xl md:text-3xl font-medium mb-4">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+            </h2>
+            <button class="bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 px-6 rounded transition duration-300">
+                Order Now
+            </button>
+        </div>
+    </div>
+    
+    <!-- Best Selling Section -->
+    <div class="py-16 px-8 bg-pink-00">
+        <h2 class="text-2xl font-bold text-center mb-2">Best Selling</h2>
+        <p class="text-gray-600 text-center mb-8">Indulge in our top 3 customer's favorite!</p>
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Strawberry Donut -->
+            <div class="text-center">
+                <img src="https://yummiestfood.com/wp-content/uploads/2016/04/Strawberry-Donuts-01.jpg" alt="Strawberry Donut" class="rounded-full w-full h-64 object-cover mx-auto" />
+                <h3 class="font-medium mt-4 mb-2">Strawberry Donut</h3>
+                <p class="text-gray-700">$2.99</p>
+            </div>
+            
+            <!-- Chocolate Donut -->
+            <div class="text-center">
+                <img src="https://thefirstyearblog.com/wp-content/uploads/2020/10/chocolate-donuts-Square2.png" alt="Chocolate Donut" class="rounded-full w-full h-64 object-cover mx-auto" />
+                <h3 class="font-medium mt-4 mb-2">Chocolate Donut</h3>
+                <p class="text-gray-700">$2.99</p>
+            </div>
+            
+            <!-- Sprinkles Donut -->
+            <div class="text-center">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.6Wx47nwFgoXkD2Eld6meLQHaGM&pid=Api&P=0&h=180" alt="Sprinkles Donut" class="rounded-full w-full h-64 object-cover mx-auto" />
+                <h3 class="font-medium mt-4 mb-2">Sprinkles Donut</h3>
+                <p class="text-gray-700">$3.49</p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-10">
+            <button class="border bg-pink-300 border-gray-400 hover:border-gray-600 text-gray-700 font-medium py-2 px-6 rounded transition duration-300">
+                All Donuts
+            </button>
+        </div>
+    </div>
+    
+    <!-- About Us Section -->
+    <div class="py-16 px-8 bg-pink-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">About Us</h2>
+            <p class="text-gray-700 mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod gravida. Ut a lectus consectetur, amet faux tellus vitae, velit consequatur nisi ex a elit. Donuts is an elemental, veniam alit ut consequatur dolorem, amet faux tellus vitae, velit consequatur nisi ex a elit. Donuts id augue ex. Etiam velit nec elit consequatur purus.
+            </p>
+            <button class="bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-6 rounded transition duration-300">
+                Read More
+            </button>
+        </div>
+    </div>
+    
+    <!-- Gallery Section -->
+    <div class="py-16 px-8">
+        <h2 class="text-2xl font-bold text-center mb-12">Lorem ipsum</h2>
+        
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Gallery Images -->
+            <img src="https://tse3.mm.bing.net/th?id=OIP.7XfVlGwZQTim1KXP7OPXlAHaE7&pid=Api&P=0&h=180" alt="Donut Gallery" class="w-full h-64 object-cover" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.HKxO_uLgaR1QYLhkMvlY9gHaHa&pid=Api&P=0&w=300&h=300" alt="Donut Gallery" class="w-full h-64 object-cover" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.it-bzwhN2-KqGb_4ytoJbwHaEK&pid=Api&P=0&w=300&h=300" alt="Donut Gallery" class="w-full h-64 object-cover" />
+            <img src="https://i.pinimg.com/originals/3f/66/94/3f6694a14d034d60b2b51c5cfc898dfa.jpg" alt="Donut Gallery" class="w-full h-64 object-cover" />
+            <img src="https://tblg.k-img.com/restaurant/images/Rvw/210667/640x640_rect_2441cee6002f13583c673e9e2e643d0b.jpg" alt="Donut Gallery" class="w-full h-64 object-cover" />
+            <img src="https://image.cnbcfm.com/api/v1/image/107018276-1645535298176-gettyimages-1316486136-dsc07748_20210505114642796.jpeg" alt="Donut Gallery" class="w-full h-64 object-cover" />
+           
+        </div>
+    </div>
+    
+    <!-- Footer (simplified) -->
+    <footer class="bg-gray-800 text-white py-12 px-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Newsletter/Contact Input -->
+            <div class="mb-8 text-center">
+                <h3 class="text-xl font-medium mb-4">Stay Updated</h3>
+                <div class="flex justify-center max-w-md mx-auto">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        class="py-2 px-4 w-full rounded-l outline-none text-gray-800"
+                    >
+                    <button class="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-r transition duration-300">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Social Media Icons -->
+            <div class="flex justify-center space-x-6 mb-8">
+                <!-- LinkedIn Icon -->
+                <a href="#" class="text-white hover:text-pink-400 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                
+                <!-- Instagram Icon -->
+                <a href="#" class="text-white hover:text-pink-400 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                
+                <!-- GitHub Icon -->
+                <a href="#" class="text-white hover:text-pink-400 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                
+                <!-- YouTube Icon -->
+                <a href="#" class="text-white hover:text-pink-400 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Copyright -->
+            <p class="text-center">© 2025 Yummy Donuts. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
